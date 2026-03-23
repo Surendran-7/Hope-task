@@ -2,35 +2,28 @@ import java.util.*;
 public class LC2864{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int length=sc.nextInt();
-        int width=sc.nextInt();
-        int height=sc.nextInt();
-        int mass =sc.nextInt();
+        String s=sc.next();
         Solution obj=new Solution();
-        String result=obj.categorizeBox(length, width, height, mass);
-        System.out.println(result);
+        System.out.println(obj.maximumOddBinaryNumber(s));
     }
 }
 class Solution {
-    public String categorizeBox(int length, int width, int height, int mass) {
-        String box="";
-        String box1="";
-        long volume=1L * length*width*height;
-        if (length>=10000 || width >= 10000 || height >= 10000 || volume >= 1000000000) {
-            box="Bulky";
+    public String maximumOddBinaryNumber(String s) {
+        int one=0,zero=0;
+        for (int i=0;i<s.length(); i++) {
+            if(s.charAt(i)=='1') {
+                one++;
+            }
         }
-        if (mass=100) {
-            box1 ="Heavy";
+        zero=s.length()-one;
+        StringBuilder sb=new StringBuilder();
+        for (int i=0; i< one-1;i++) {
+            sb.append("1");
         }
-        if (box.equals("Bulky") && box1.equals("Heavy")) {
-            return "Both";
+        for (int i = 0; i < zero; i++) {
+            sb.append("0");
         }
-        if (!box.equals("Bulky") && !box1.equals("Heavy")) {
-            return "Neither";
-        }
-        if (box.equals("Bulky")) {
-            return "Bulky";
-        }
-        return "Heavy";
+        sb.append("1");
+        return sb.toString();
     }
 }
