@@ -1,0 +1,20 @@
+class Solution {
+    public int[] shuffle(int[] nums, int n) {
+        var lst = new ArrayList<Integer>();
+
+        for(int i = 0; i < nums.length; i++){
+            if(i >= (nums.length/2)){
+                lst.add(nums[i]);
+            } else {
+                lst.add(nums[i]);
+                lst.add(nums[i+n]);
+            }
+        }
+
+        for(int i = 0; i < nums.length; i++){
+            nums[i] = lst.get(i);
+        }
+
+        return nums;
+    }
+}
