@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Statickey{
+    public static void main(String[] args){
+        display();
+        Statickey obj = new Statickey();
+        obj.nonStaticMethod();
+    }
+    public static void display(){
+        System.out.println("This is a static method.");
+    }
+    public void nonStaticMethod(){
+        System.out.println("This is a non-static method.");
+    }
+}
