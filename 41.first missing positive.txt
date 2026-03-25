@@ -1,0 +1,30 @@
+class Solution {
+
+    public static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
+    public int firstMissingPositive(int[] arr) {
+
+        int i = 0;
+        int n = arr.length;
+
+        while (i < n) {
+            if (arr[i] < 1 || arr[i] > n || arr[i] == arr[arr[i] - 1]) {
+                i++;
+            } else {
+                swap(arr, i, arr[i] - 1);
+            }
+        }
+
+        for (int j = 0; j < n; j++) {
+            if (arr[j] != j + 1) {
+                return j + 1;
+            }
+        }
+
+        return n + 1;
+    }
+}
