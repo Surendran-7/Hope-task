@@ -1,0 +1,20 @@
+package DAY_6.VsCode;
+public class ApartmentConstructor {
+    public static void main(String[] args) {
+        ApartmentConstructor ap1=new ApartmentConstructor(1,1,1,1,1,1);
+        ApartmentConstructor ap2=new ApartmentConstructor(2,2,1,1,1,1);
+        ApartmentConstructor ap3=new ApartmentConstructor(4, 4,1,1, 2, 1);
+    }
+    ApartmentConstructor(int room,int Washroom, int kitchen, int dininghall, int livingRoom, int playground){
+        if(room==1){
+            System.out.println("There is "+room+" room and "+Washroom+" not attached washroom and there is "+kitchen+" kitchen with "+dininghall+" not attached dining hall and there is "+livingRoom+" livingroom and "+playground+" playground");
+        }
+        else if(room==2){
+             System.out.println("There is "+room+" rooms and "+Washroom+" attached washroom and there is "+kitchen+" kitchen with "+dininghall+" attached dining hall and there is "+livingRoom+" livingroom and "+playground+" playground");
+        }
+        else if(room==4){
+            System.out.println("There is "+room+" rooms and "+Washroom+" attached washroom and there is "+kitchen+" kitchen with "+dininghall+" attached dining hall and there is "+livingRoom+" livingroom , one for each two room and "+playground+" playground");
+        }
+    }
+    
+}
