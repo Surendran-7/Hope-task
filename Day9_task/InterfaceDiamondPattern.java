@@ -1,5 +1,3 @@
- 
-package DAY_9.Task;
 class A{
     void display(){
         System.out.println("I am in class A");
