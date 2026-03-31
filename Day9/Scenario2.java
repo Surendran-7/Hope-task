@@ -1,5 +1,3 @@
-package DAY_9.VsCode;
-//different types of payment method
 interface payment{
     void transfer();
 }
