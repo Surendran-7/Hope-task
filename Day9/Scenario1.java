@@ -1,4 +1,3 @@
-package DAY_9.VsCode;
 import java.util.*;
 interface Salary{
     void salaray();
