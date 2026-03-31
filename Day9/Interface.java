@@ -1,5 +1,3 @@
-package DAY_9.VsCode;
-
 interface A{
     void show();
 }
