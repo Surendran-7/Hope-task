@@ -1,6 +1,6 @@
 // Base Class
 class Person {
-    private String name = "Dhivya";     // private
+    private String name = "Jhon";     // private
     int age = 20;                      // default
     protected String city = "Chennai"; // protected
     public String country = "India";   // public
