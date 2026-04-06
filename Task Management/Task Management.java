@@ -84,21 +84,15 @@ public class TaskManagement {
         }
     }
 }
-public class TaskManager extends Task {
-    private List<Task> tasks;
 
-
-
-    public void addTask(Task task) {
-        tasks.add(task);
+public class task3 extends Task {
+    public task3(String name, String description, Date dueDate) {
+        super(name, description, dueDate);
     }
-
-    public void removeTask(Task task) {
-        tasks.remove(task);
-    }
-
-    public List<Task> getAllTasks() {
-        return tasks;
+}
+public class task4 extends Task {
+    public task4(String name, String description, Date dueDate) {
+        super(name, description, dueDate);
     }
 }
 interface TaskManagerInterface {
