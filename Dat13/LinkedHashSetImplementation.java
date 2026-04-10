@@ -1,4 +1,3 @@
-package Sugasri_HOPE_Batch_1.DAY_13.VsCode;
 
 import java.util.*;
 
