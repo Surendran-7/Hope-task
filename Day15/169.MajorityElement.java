@@ -1,5 +1,3 @@
-package Sugasri_HOPE_Batch_1.DAY_15;
-
 class Solution {
     public int majorityElement(int[] nums) {
         int value=0;
