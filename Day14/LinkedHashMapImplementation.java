@@ -1,7 +1,4 @@
-
-
 import java.util.LinkedHashMap;
-
 public class LinkedHashMapImplementation {
     public static void main(String[] args) {
             LinkedHashMap<String, Integer> linkedHashMap = new LinkedHashMap<>();
@@ -12,4 +9,3 @@ public class LinkedHashMapImplementation {
             System.out.println(linkedHashMap);
     }
 }
-//LinkedHashMap maintains the insertion order of the elements. It is a hash table and linked list implementation of the Map interface, with predictable iteration order.
