@@ -1,4 +1,3 @@
-package Sugasri_HOPE_Batch_1.DAY_14.VsCode;
 import java.util.*;
 public class FrequencyImplementation {
     public static void main(String[] args) {
