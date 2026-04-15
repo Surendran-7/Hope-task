@@ -1,4 +1,3 @@
-package DAY_17.problems_solved;
 import java.util.*;
 public interface IteratorImplementation {
     public static void main(String[] args) {
