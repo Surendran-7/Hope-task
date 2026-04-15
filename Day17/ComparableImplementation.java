@@ -1,4 +1,3 @@
-package DAY_17.problems_solved;
 import java.util.*;;
 class Student implements Comparable<Student>{
     int rollno;
