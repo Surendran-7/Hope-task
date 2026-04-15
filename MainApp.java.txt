@@ -1,0 +1,20 @@
+package com.compression;
+
+public class MainApp {
+
+    public static void main(String[] args) throws Exception {
+
+        String input = "input.txt";
+        String compressed = "compressed.txt";
+
+        Compressor compressor = new Compressor();
+        Node root = compressor.compress(input, compressed);
+
+        String encodedData = compressor.readCompressed(compressed);
+
+        HuffmanService service = new HuffmanService();
+        String result = service.decompress(encodedData, root);
+
+        System.out.println("Decompressed Text: " + result);
+    }
+}
