@@ -1,5 +1,3 @@
-package Sugasri_HOPE_Batch_1.DAY_16;
-
 class Solution {
     public int firstUniqChar(String s) {
         int[] count=new int[26];
