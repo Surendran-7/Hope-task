@@ -1,8 +1,4 @@
-package DAY_17.problems_solved;
-
-import java.util.ArrayList;
-import java.util.List;
-
+import java.util.*;
 public class RemoveImplementation {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
