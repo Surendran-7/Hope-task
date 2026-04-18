@@ -1,0 +1,8 @@
+import java.util.*;
+
+public class LambdaImplementation {
+    public static void main(String[] args) {
+        List<Integer> l=Arrays.asList(1,2,3,4,5);
+        l.forEach((n)->System.out.println(n));
+    }
+}
